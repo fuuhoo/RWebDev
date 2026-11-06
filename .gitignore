@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Build outputs
+dist/
+src-tauri/target/
+src-tauri/gen/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+tauri-dev.log
+
+# Editor / OS / env
+.vscode/
+.idea/
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Local app persistence
+# (do not ignore project json files)
+*.json
+!package.json
+!package-lock.json
+!src-tauri/tauri.conf.json
+!tsconfig.json
+!vite.config.ts
+!src-tauri/capabilities/*.json
+
+# Cargo / Rust
+*.rs.bk
+
+# Screenshots
+*.png
+!src-tauri/icons/*.png
